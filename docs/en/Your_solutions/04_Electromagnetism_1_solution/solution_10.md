@@ -1,67 +1,65 @@
-Problem 10: Lorentz Force acting on Wire
-The Goal: Calculate the magnetic force on a straight current-carrying wire at three different angles relative to a uniform magnetic field.
+# 📝 Physics Problem: Lorentz Force on a Wire
 
-Given Data:
+## 🎯 Problem Overview
+The objective is to calculate the **magnetic force** (also known as the Ampere force) acting on a straight, current-carrying conductor when placed in a uniform magnetic field at various orientations.
 
-Length of wire (L) = 2.0 m
+---
 
-Current (I) = 10 A
+## 📊 1. Given Data
+The following parameters are provided for the calculation:
 
-Uniform magnetic field (B) = 0.5 T
+| Parameter | Symbol | Value | Unit |
+| :--- | :---: | :--- | :--- |
+| **Length of the wire** | $L$ | **2.0** | meters (m) |
+| **Electric current** | $I$ | **10** | Amperes (A) |
+| **Magnetic field strength** | $B$ | **0.5** | Tesla (T) |
 
-Angles (θ): 90°, 45°, 0°
+**Angles to be analyzed ($\theta$):** $90^\circ$, $45^\circ$, and $0^\circ$.
 
-Formula Used:
-Magnetic force on a current-carrying wire (Ampere's Force Law):
+---
 
-F=ILBsin(θ)
-Why use this? This is the macroscopic application of the Lorentz force. Instead of a single moving point charge, we are dealing with a continuous flow of charges (current) moving through a straight conductor of a specific length. The sin(θ) factor is essential because the magnetic force only acts on the component of the wire that is perpendicular to the magnetic field lines.
+## 🔬 2. Physical Principles & Formula
+To solve this, we use the formula for the magnetic force on a straight wire:
 
-Shutterstock
+$$F = I \cdot L \cdot B \cdot \sin(\theta)$$
 
-Step-by-Step Calculation:
+### 💡 Why this formula?
+This equation is the macroscopic version of the **Lorentz Force Law**. It describes how a magnetic field interacts with moving charges (current) inside a conductor. The term $\sin(\theta)$ is critical because it accounts for the orientation: **only the component of the current perpendicular to the magnetic field experience a force.**
 
-First, calculate the maximum possible force, which is simply the product of current, length, and the magnetic field. This represents the force when the sine component is equal to 1.
+[Image of magnetic force on a current-carrying wire]
+[Image of right hand rule for magnetic force on a wire]
 
-F 
-max
-​	
- =10 A×2.0 m×0.5 T=10 N
-Now, calculate the actual force for each specific angle by multiplying this maximum force by the sine of the angle:
+---
 
-a) Angle θ = 90°
+## 🧮 3. Step-by-Step Calculations
 
-sin(90 
-∘
- )=1
+### **Phase A: Constant Product**
+First, let's calculate the product of $I$, $L$, and $B$, which represents the maximum possible force (when $\sin(\theta) = 1$):
+$$k = I \cdot L \cdot B = 10 \cdot 2.0 \cdot 0.5 = 10 \, \text{N}$$
 
-Explanation: The wire is perfectly perpendicular to the magnetic field, resulting in the maximum possible force.
+### **Phase B: Analysis by Angle**
 
-F = 10 N
+#### **Case (a): Perpendicular ($\theta = 90^\circ$)**
+* **Condition:** The wire is at a right angle to the magnetic field.
+* **Calculation:** $F = 10 \cdot \sin(90^\circ) = 10 \cdot 1$
+* **Result:** **$10 \, \text{N}$** (Maximum Force)
 
-b) Angle θ = 45°
+#### **Case (b): Angled ($\theta = 45^\circ$)**
+* **Condition:** The wire is at a diagonal to the field lines.
+* **Calculation:** $F = 10 \cdot \sin(45^\circ) = 10 \cdot 0.707$
+* **Result:** **$\approx 7.07 \, \text{N}$**
 
-sin(45 
-∘
- )= 
-2
-2
+#### **Case (c): Parallel ($\theta = 0^\circ$)**
+* **Condition:** The wire is aligned with the magnetic field lines.
+* **Calculation:** $F = 10 \cdot \sin(0^\circ) = 10 \cdot 0$
+* **Result:** **$0 \, \text{N}$** (No Force)
 
-​	
- 
-​	
- ≈0.707
+---
 
-Explanation: The wire is at a diagonal to the field lines, so only a portion of the current is acting perpendicularly to the field.
+## ✅ 4. Final Results Summary
 
-F = 10 N × 0.707 = 7.07 N
-
-c) Angle θ = 0°
-
-sin(0 
-∘
- )=0
-
-Explanation: The wire is completely parallel to the magnetic field. Magnetic fields exert zero force on charges that move parallel to their field lines.
-
-F = 0 N
+| Orientation | Angle ($\theta$) | Calculation | Force ($F$) |
+| :--- | :---: | :---: | :--- |
+| **Perpendicular** | $90^\circ$ | $10 \times 1.0$ | **10.0 N** |
+| **Diagonal** | $45^\circ$ | $10 \times 0.707$ | **7.07 N** |
+| **Parallel** | $0^\circ$ | $10 \times 0.0$ | **0.0 N** |
